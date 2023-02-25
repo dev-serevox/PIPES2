@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Currency Pipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+          h1 {
+
+        font-size: 36px;
+        letter-spacing: 3px;
+        color: black;
+        font-family: Oswald, sans-serif;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="card card__one">
+        <figure class="card__img">
+          <img
+            src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFRsQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1a569cbdb522882e3fcdfc2efb0a660c3d8a774d/euro.jpg"
+            width="340"
+            height="280"
+          />
+        </figure>
+        <div class="card__desc">
+          <h1>Euro</h1>
+          The euro is the official currency of 20 of the 27 member states of the
+          European Union (EU).
+          <br />
+          <br />
+          The Equivalent of 1 EURO to PHP is :{{ euro | currency: 'PHP' }}
+        </div>
+      </div>
+
+      <div class="card card__two">
+        <figure class="card__img">
+          <img
+            src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOExsQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f979525e9ae87461d72e81d1c18c20d2419c4a35/yuan.jpg"
+            width="340"
+            height="280"
+          />
+        </figure>
+        <div class="card__desc">
+          <h1>PRC Renminbi</h1>
+          The renminbi is the official currency of the People's Republic of
+          China and one of the world's most traded currencies, ranking as the
+          fifth most traded currency in the world as of April 2022.
+          <br />
+          <br />
+          The Equivalent of 1 RMB to PHP is : {{ yuan | currency: 'PHP' }}
+        </div>
+      </div>
+
+      <div class="card card__three">
+        <figure class="card__img">
+          <img
+            src="https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFBsQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--b81860800d01e23f5972c800785fdee4ab2d280a/usd.jpg"
+            width="340"
+            height="280"
+          />
+        </figure>
+        <div class="card__desc">
+          <h1>US Dollars</h1>
+          The United States dollar is the official currency of the United States
+          and several other countries.
+          <br />
+          <br />
+          The Equivalent of 1 USD to PHP is : {{ usd | currency: 'PHP' }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
